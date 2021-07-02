@@ -101,7 +101,7 @@ public class Login {
 		 driver.quit();  
 	}
 	
-	@Then("^validate error messageTesting$")
+	@Then("^validate error message$")
 	public void validateTesting() throws Throwable {
 		System.out.println();
 	    // Write code here that turns the phrase above into concrete actions
