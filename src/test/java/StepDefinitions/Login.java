@@ -103,6 +103,7 @@ public class Login {
 	
 	@Then("^validate error messageTesting$")
 	public void validateTesting() throws Throwable {
+		System.out.println();
 	    // Write code here that turns the phrase above into concrete actions
 		WebElement errorMsg  = driver.findElement(By.xpath("//span[text()='Invalid credentials']"));
 		if(errorMsg.isDisplayed()) {
