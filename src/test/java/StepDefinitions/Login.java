@@ -101,6 +101,19 @@ public class Login {
 		 driver.quit();  
 	}
 	
+	@Then("^validate error messageTesting$")
+	public void validateTesting() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+		WebElement errorMsg  = driver.findElement(By.xpath("//span[text()='Invalid credentials']"));
+		if(errorMsg.isDisplayed()) {
+			System.out.println("Error message  is displayed");
+		}
+		else {
+			System.out.println("Error message not displayed for invalid user");
+		}
+		 driver.quit();  
+	}
+	
 	
 	@After
 	public void closeBrowser() {
